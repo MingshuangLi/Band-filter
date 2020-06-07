@@ -10,4 +10,4 @@ steepness = input('Please input the steepness ratio: ');
 figure;
 pspectrum(waveform_LP,fs)
 names= input('Please type name of new audiofile: ', 's');
-%audiowrite(names,waveform_LP,fs)
+audiowrite(names,waveform_LP,fs)
