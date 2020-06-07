@@ -1,4 +1,4 @@
-% Band filter for imported sounds (e.g., speech and noise)
+% Band filter for imported sounds (e.g., speech and noise), based on matlab
 % Mingshuang Li, UT Austin
 clear;
 
