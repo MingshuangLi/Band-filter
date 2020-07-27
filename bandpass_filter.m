@@ -8,6 +8,6 @@ low_cutoff = input('Please input the low cut off frequency (Hz): ');
 high_cutoff = input('Please input the high cut off frequency (Hz): ');
 waveform_banded = bandpass(waveform,[low_cutoff high_cutoff],fs);
 figure;
-pspectrum(waveform_banded,fs);
+pspectrum(waveform_banded,fs, 'FrequencyLimits',[1 10000]);
 names= input('Please type name of new audiofile: ', 's');
 audiowrite(names,waveform_banded,fs)
