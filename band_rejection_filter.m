@@ -2,9 +2,6 @@
 % Mingshuang Li, UT Austin
 clear;
 
-
-clear;
-
 wavefile = input('Please type the wave file name: ', 's');
 [waveform, fs] = audioread(wavefile);
 low_cutoff = input('Please input the low cut off frequency (Hz): ');
