@@ -8,6 +8,6 @@ steepness = input('Please input the steepness ratio: ');
 [waveform, fs] = audioread(wavefile);
 [waveform_LP,d] = lowpass(waveform,cutoff,fs,'Steepness',steepness);
 figure;
-pspectrum(waveform_LP,fs)
+pspectrum(waveform_LP,fs, 'FrequencyLimits',[1 10000])
 names= input('Please type name of new audiofile: ', 's');
 audiowrite(names,waveform_LP,fs)
